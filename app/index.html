@@ -1,68 +1,126 @@
 <!doctype html> 
-<html lang="en"> <head> <meta charset="UTF-8">
-<title>Bidstar</title>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+        <title>Bidstar</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-<link rel="stylesheet" href="../styles/styles.css"/>
-<meta name=viewport content="width=device-width, initial-scale=1">
-</head>
-<body>
-<div class='wrapper'>
-    <!-- Do we need/want a header? -->
-    <header>
-    </header>
-    <section class='featured'>
-        <div class='on-top'>
-            <div class='avatar'>
-                <img src='https://pbs.twimg.com/profile_images/419157741014638592/FAQE0LKk.jpeg' class='circle verified'/>
-            </div>
-            <!--<div class='time'>-->
-            <!--<p>1 hr left</p>-->
-            <!--</div>-->
-        </div>
-        <ul class='image-list'>
-            <li><img src="../images/hero-image-desktop.JPG" /></li>
-            <li><img src="http://placehold.it/1200x400&text=banner+image+2" /></li>
-            <li><img src="http://placehold.it/1200x400&text=banner+image+3" /></li>
-        </ul>
-        <div class='description'>
-            <div class='container-fluid'>
-                <h3>test</h3>
-                <p class='desc'>This is where the description of the item goes, I know nothing about Sam Warburton or boots so I'll just write some jibberish</p>
-                <div class='price'>
-                    <p>&pound;1000</p>
+        <link rel="stylesheet" href="../styles/styles.css"/>
+        <link rel="stylesheet" href="../styles/slick.css" />
+        <meta name=viewport content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class='wrapper'>
+            <nav class='navbar navbar-default ' role='navigation'>
+                <div class='container-fluid'>
+                    <div class='navbar-header'>
+                        <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='navbar'>
+                            <span class='sr-only'>Toggle navigation</span>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                        </button>
+                        <a class='navbar-brand' href='#'>Bidstar</a>
+                    </div>
+
+                    <div class='collapse navbar-collapse' id='navbar'>
+                        <ul class='nav navbar-nav'>
+                            <li class='active'><a href='#'>Home</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </nav>
+            <section class='col-lg-12'>
+                <div class='featured product'>
+                    <div class='on-top'>
+                        <div class='avatar'>
+                            <img src="https://pbs.twimg.com/profile_images/419157741014638592/FAQE0LKk.jpeg" class='circle verified' />
+                        </div>
+                    </div>
+                    <div class='caption'>
+                        <h3>Signed Shirt</h3>
+                        <p>A signed shirt by someone really, really famous.</p>
+                        <p class='price'>Current Bid <span>&pound;1,000</span></p> 
+                    </div>
+                    <ul class='slider'>
+                        <li><img src="../images/hero-image-desktop.JPG" /></li>
+                        <li><img src="http://placehold.it/2000x945" /></li>
+                    </ul>
+                </div>
+            </section>
+            <section class='col-sm-6'>
+                <div class='product'>
+                    <div class='caption full-height'>
+                        <h3>Sports</h3>
+                    </div>
+                    <ul>
+                        <li><img src="../images/liverpool.jpg" /></li>
+                    </ul>
+                </div>
+            </section>
+            <section class='col-sm-6'>
+                <div class='product'>
+                    <div class='caption full-height'>
+                        <h3>Television</h3>
+                    </div>
+                    <ul>
+                        <li><img src="../images/burgundy.jpg" /></li>
+                    </ul>
+                </div>
+            </section>
+            <section class='col-sm-6'>
+                <div class='product'>
+                    <div class='caption full-height'>
+                        <h3>Flag man</h3>
+                    </div>
+                    <ul>
+                        <li><img src="../images/fan.jpg" /></li>
+                    </ul>
+                </div>
+            </section>
+            <section class='col-sm-6'>
+                <div class='product'>
+                    <div class='caption full-height'>
+                        <h3>Sports</h3>
+                    </div>
+                    <ul>
+                        <li><img src="../images/liverpool.jpg" /></li>
+                    </ul>
+                </div>
+            </section>
+            <section class='col-sm-6'>
+                <div class='product'>
+                    <div class='caption full-height'>
+                        <h3>Television</h3>
+                    </div>
+                    <ul>
+                        <li><img src="../images/burgundy.jpg" /></li>
+                    </ul>
+                </div>
+            </section>
+            <section class='col-sm-6'>
+                <div class='product'>
+                    <div class='caption full-height'>
+                        <h3>Flag man</h3>
+                    </div>
+                    <ul>
+                        <li><img src="../images/fan.jpg" /></li>
+                    </ul>
+                </div>
+            </section>
         </div>
-    </section>
-    <section>
-        <ul class='image-list'>
-            <li><img src="../images/liverpool.jpg" /></li>
-            <div class='caption'>
-                <h3>Sports</h3>
-            </div>
-        </ul>
-    </section>
-    <section>
-        <ul class='image-list'>
-            <li><img src="../images/burgundy.jpg" /></li>
-            <div class='caption'>
-                <h3>Films</h3>
-            </div>
-        </ul>
-    </section>
-    <section>
-        <ul class='image-list'>
-            <li><img src="../images/fan.jpg" /></li>
-            <div class='caption'>
-                <h3>Flag man</h3>
-            </div>
-        </ul>
-    </section>
-</div>
-
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="../scripts/main.js"></script>
-</body>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="../scripts/main.js"></script>
+        <script src="../scripts/slick.js"></script>
+        <script>
+            $(document).ready(function(e) {
+                $('.slider').slick({
+                    autoplay: true,
+                    arrows: false,
+                    slide: 'li'
+                });
+            });
+        </script>
+    </body>
 </html>
