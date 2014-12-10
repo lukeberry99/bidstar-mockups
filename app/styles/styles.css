@@ -25,6 +25,9 @@
 .product {
   position: relative; }
 
+h3 {
+  font-weight: 200 !important; }
+
 .wrapper {
   max-width: 960px;
   margin: 0 auto;
