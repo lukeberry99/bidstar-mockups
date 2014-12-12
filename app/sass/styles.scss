@@ -13,12 +13,23 @@ section {
     margin: 0 !important;
     border-bottom: 1px solid $divider;
     .avatar {
-        width: 15%;
+        position: relative;
+        width: 20%;
         img {
             border: 2px solid $base;
-        }
+       }
         margin: 10px;
     }
+   .verified {
+       background: url('../images/refined/verified-twitter.png') no-repeat;
+       background-size: 30px 30px;
+       height: 30px;
+       width: 30px;
+       z-index: 1000;
+       position: absolute;
+       bottom: 0;
+       right: 0;
+   }
     ul {
         margin: 0;
         padding: 0;
@@ -35,21 +46,21 @@ section {
         }
     }
     .caption {
-        background: rgba(0, 0, 0, 0.45);
+        background: rgba(0, 0, 0, 0.6);
         padding: 0px 10px 0px 10px;
         color: #ffffff;
         h3 {
-            font-size: 1em;
+            font-size: 1.7em;
             font-weight: 300;
             padding: 0;
             margin: 0;
-            padding-top: 5px;
+            padding-top: 10px;
         }
         p {
             padding: 0;
             margin:0;
-            padding-bottom: 5px;
-            font-size: 1rem;
+            padding-bottom: 10px;
+            font-size: 1em;
             font-weight: 200;
         }
         &.full-height {
@@ -60,7 +71,9 @@ section {
             transition: background .5s ease;
             h3 {
                 text-align: center;
-                margin-top: 25%;
+                margin-top: 20%;
+                font-size: 40px;
+                font-weight: 200;
             } 
         } 
         p {
@@ -70,14 +83,16 @@ section {
         .price {
             padding: 0;
             margin: 0;
-            margin-top: -35px;
-            font-size: .9rem;
+            font-size: 1em;
+            display: inline-block;
+            float: right;
+            margin-top: -57px;
             span {
                 padding: 0;
                 margin: 0;
                 margin-top: -5px;
                 display: block;
-                font-size: 2rem;
+                font-size: 2.5rem;
                 font-weight: 300;
             }
             /*float: right;*/
