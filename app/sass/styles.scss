@@ -11,7 +11,7 @@
 section {
     padding: 0 !important;
     margin: 0 !important;
-    border-bottom: 1px solid $hilight;
+    border-bottom: 1px solid $divider;
     .avatar {
         width: 50px;
         img {
@@ -57,8 +57,6 @@ section {
             text-align: right;
             width: 30%;
         }
-    }
-    .avatar {
     }
 }
 
