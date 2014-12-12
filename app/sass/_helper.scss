@@ -17,13 +17,20 @@
 }
 .caption {
     z-index: 999;
+    // display: none;
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
     &.full-height {
+        display: block;
         height: 100%;
         min-height: 200px;
+    }
+}
+.slick-active {
+    .caption {
+        // display: block;
     }
 }
 .product {

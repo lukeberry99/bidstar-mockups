@@ -13,7 +13,7 @@ section {
     margin: 0 !important;
     border-bottom: 1px solid $divider;
     .avatar {
-        width: 50px;
+        width: 25%;
         img {
             border: 2px solid $base;
         }
@@ -26,6 +26,7 @@ section {
             margin-bottom: 0px;
         }
         li {
+            position: relative;
             list-style: none;
             width: 100%;
             img {
@@ -34,10 +35,16 @@ section {
         }
     }
     .caption {
-        background: rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.45);
         padding: 0px 10px 0px 10px;
         color: #ffffff;
+        
         &.full-height {
+            &:hover {
+                background: rgba(0, 0, 0, 0.3);
+                transition: background .5s ease;
+            }
+            transition: background .5s ease;
             h3 {
                 text-align: center;
                 margin-top: 25%;
